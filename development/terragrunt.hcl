@@ -5,7 +5,7 @@ include {
 
 # Set the source to an immutable released version of the infrastructure module being deployed:
 terraform {
-  source = "git::https://github.com/nclouds/doz-cloudprem-infrastructure.git//cloudprem?ref=v0.0.3"
+  source = "git::https://github.com/nclouds/doz-cloudprem-infrastructure.git//cloudprem?ref=v0.0.4"
 }
 
 # Configure input values for the specific environment being deployed:
@@ -14,7 +14,7 @@ inputs = {
 
   vpc_cidr = "172.16.0.0/16"
 
-  dozuki_license_parameter_name = "/cloudprem-dev/license"
+  dozuki_license_parameter_name = "/cloudprem/dev/license"
 
   environment = "dev"
 }
