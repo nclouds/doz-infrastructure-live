@@ -15,6 +15,8 @@ To deploy the stack, perform the following steps:
     $ terragrun init
     ```
 
+    *Terragrunt will use the envrionment variable `AWS_REGION` to configure the S3/DynamoDB backend. If not specified will default to us-west-2*
+
 2. Review the parameters in the [terragrunt.hcl](./development/terragrunt.hcl) file and execute the plan/apply
 
     ```console
